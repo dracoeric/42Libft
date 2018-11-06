@@ -6,7 +6,7 @@
 /*   By: erli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 16:09:37 by erli              #+#    #+#             */
-/*   Updated: 2018/11/06 17:06:04 by erli             ###   ########.fr       */
+/*   Updated: 2018/11/06 17:37:49 by erli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,19 @@ int		main(void)
 
 //Test de Strdup
 	printf("___=== Test de ft_memeset ===___\n");
-	str[9] = '\0';
-	printf("%s\n", ft_memset(str, 90, 9)); 
+	str[9] = '\0';	
+	printf("Ecrire 9 'Z'\n");
+	printf("%s\n", ft_memset(str, 90, 9));
+	printf("Ecrire 7 'Y'\n");	
+	printf("%s\n", ft_memset(str, 89, 7)); 
+
+
+//Test de bzero
+	printf("___=== Test de ft_bzero ===___\n");
+	printf("Ecrire 2 byte nul\n");
+	ft_bzero(str, 2);
+	printf("str = %s\n", str);
+	printf("str[1] = %c\n", str[1]);
+	printf("str[2] = %c\n", str[2]);
 	return (0);
 }
