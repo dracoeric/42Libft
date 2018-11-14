@@ -6,7 +6,7 @@
 #    By: erli <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 16:17:09 by erli              #+#    #+#              #
-#    Updated: 2018/11/09 16:12:10 by erli             ###   ########.fr        #
+#    Updated: 2018/11/14 13:57:22 by erli             ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -95,6 +95,7 @@ all		: $(NAME)
 
 $(NAME)	:	$(OBJS) ./libft.h
 		ar rc $(NAME) $(OBJS)
+		ranlib $(NAME)
 
 %.o		: %.c
 		$(CC) -o $@ -c $< $(CFLAG)
@@ -103,7 +104,7 @@ delsav	:
 		rm -f *~
 
 clean	:
-		rm -f *.o
+		rm -f $(OBJS)
 
 fclean	: clean 
 		rm -f $(NAME)
