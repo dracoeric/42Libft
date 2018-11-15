@@ -6,7 +6,7 @@
 /*   By: erli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 16:40:19 by erli              #+#    #+#             */
-/*   Updated: 2018/11/15 10:18:52 by erli             ###   ########.fr       */
+/*   Updated: 2018/11/15 10:21:27 by erli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,8 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t n);
 char			*ft_strcat(char *s1, const char *s2);
-char			*ft_strncat(char *s1, const char *s2,
-					size_t n);
-size_t			ft_strlcat(char *1, const char *s2,	size_t n);
+char			*ft_strncat(char *s1, const char *s2, size_t n);
+size_t			ft_strlcat(char *s1, const char *s2, size_t n);
 char			*ft_strchr(const char *str, int c);
 char			*ft_strrchr(const char *str, int c);
 char			*ft_strstr(const char *haysack, const char *needle);
