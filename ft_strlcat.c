@@ -6,13 +6,13 @@
 /*   By: erli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 15:11:24 by erli              #+#    #+#             */
-/*   Updated: 2018/11/07 16:13:14 by erli             ###   ########.fr       */
+/*   Updated: 2018/11/15 10:20:26 by erli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t n)
 {
 	size_t l_dest;
 	size_t l_src;

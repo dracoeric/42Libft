@@ -6,11 +6,11 @@
 /*   By: erli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:29:06 by erli              #+#    #+#             */
-/*   Updated: 2018/11/07 16:36:11 by erli             ###   ########.fr       */
+/*   Updated: 2018/11/15 10:19:31 by erli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *restrict s1, const char *restrict s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int i;
 	int j;
